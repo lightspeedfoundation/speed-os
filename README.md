@@ -2,6 +2,14 @@
 
 This repository contains agent-facing documentation for **Speed OS**, a Manifest V3 Chromium extension from Lightspeed that replaces the browser new tab page with an intent-driven interface for `speed` CLI workflows.
 
+# Installation
+drop speed-os.crx into google chrome or brave
+
+- chrome://extensions/
+- brave://extensions/
+
+with developer mode on
+
 ## What is in this repo
 
 - `speed-os/skill.md` — the authoritative, full-length operational reference for AI agents
