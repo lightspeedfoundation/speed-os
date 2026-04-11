@@ -1,6 +1,6 @@
 # Privacy Policy — Speed OS (Chrome Extension)
 
-**Version 2.0 | Last updated: 4/11/2026
+**Version 1.0 | Last updated: 4/11/2026
 
 ---
 
