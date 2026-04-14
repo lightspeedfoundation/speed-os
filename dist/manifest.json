@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Speed OS",
+  "version": "0.1.0",
+  "description": "Terminal-based trading OS for your new tab — ambient intent UI + full speed-cli power.",
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon48.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["storage", "alarms", "notifications", "declarativeNetRequest"],
+  "host_permissions": [
+    "https://mcp.ispeed.pro/*",
+    "http://127.0.0.1/*",
+    "http://localhost/*",
+    "https://api.0x.org/*",
+    "https://v2.api.squidrouter.com/*",
+    "https://*.g.alchemy.com/*",
+    "https://api.dexscreener.com/*",
+    "https://cdn.dexscreener.com/*",
+    "https://mainnet.base.org/*",
+    "https://sepolia.base.org/*",
+    "https://eth.llamarpc.com/*",
+    "https://mainnet.optimism.io/*",
+    "https://polygon.llamarpc.com/*",
+    "https://arb1.arbitrum.io/*",
+    "https://bsc-dataseed.binance.org/*",
+    "https://api.hyperliquid.xyz/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "mcp_origin",
+        "enabled": true,
+        "path": "rules/mcp-dnr.json"
+      }
+    ]
+  }
+}

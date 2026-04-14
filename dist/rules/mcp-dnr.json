@@ -1,0 +1,25 @@
+[
+  {
+    "id": 100,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "Origin",
+          "operation": "set",
+          "value": "https://mcp.ispeed.pro"
+        },
+        {
+          "header": "Referer",
+          "operation": "set",
+          "value": "https://mcp.ispeed.pro/"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "||mcp.ispeed.pro^",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  }
+]
